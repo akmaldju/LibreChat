@@ -347,3 +347,45 @@ endpoints:
     #   summaryModel: "togethercomputer/llama-2-7b-chat"
     #   forcePrompt: false
     #   modelDisplayLabel: "together.ai"
+
+    - name: 'HuggingFace'
+      apiKey: '${HUGGINGFACE_TOKEN}'
+      baseURL: 'https://api-inference.huggingface.co/v1'
+      models:
+        default: [
+          "--Google--",
+          "google/gemma-1.1-2b-it",
+          "google/gemma-1.1-7b-it",
+          "--HuggingFace--",
+          "HuggingFaceH4/starchat2-15b-v0.1",
+          "HuggingFaceH4/zephyr-7b-beta",
+          "--Meta--",
+          "meta-llama/Llama-3.2-11B-Vision-Instruct",
+          "meta-llama/Llama-3.2-3B-Instruct",
+          "meta-llama/Llama-3.2-1B-Instruct",
+          "--Microsoft--",
+          "microsoft/Phi-3.5-mini-instruct",
+          "microsoft/Phi-3-mini-4k-instruct",
+          "--MistralAI--",
+          "mistralai/Mistral-7B-Instruct-v0.3",
+          "--NousResearch--",
+          "NousResearch/Nous-Hermes-2-Mixtral-8x7B-DPO",
+          "--Qwen--",
+          "Qwen/Qwen2.5-72B-Instruct",
+          "Qwen/QwQ-32B-Preview",
+          "Qwen/Qwen2.5-Coder-32B-Instruct",
+          "--Others--",
+          # "black-forest-labs/FLUX.1-dev",
+          # "black-forest-labs/FLUX.1-schnell",
+          # "XLabs-AI/flux-RealismLora",
+          # "CompVis/stable-diffusion-v1-4",
+          # "stabilityai/stable-diffusion-xl-base-1.0",
+          # "stabilityai/stable-diffusion-3.5-large",
+          # "bigcode/starcoder2-15b",
+          "codellama/CodeLlama-34b-Instruct-hf",
+        ]
+        # fetch: true
+      titleConvo: true
+      titleModel: "NousResearch/Nous-Hermes-2-Mixtral-8x7B-DPO"
+      dropParams: ["top_p"]
+      modelDisplayLabel: "HuggingFace"
