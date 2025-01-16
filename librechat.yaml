@@ -107,7 +107,7 @@ endpoints:
     #   titleModel: "mixtral-8x7b-32768"
     #   modelDisplayLabel: "groq"
  
-    Mistral AI API
+    # Mistral AI API
     - name: "Mistral"
       apiKey: "${MISTRAL_API_KEY}"
       baseURL: "https://api.mistral.ai/v1"
@@ -124,7 +124,7 @@ endpoints:
       modelDisplayLabel: "Mistral"
       dropParams: ["stop", "user", "frequency_penalty", "presence_penalty"]
 
-    Codestral AI API
+    # Codestral AI API
     - name: "Codestral"
       apiKey: "${CODESTRAL_API_KEY}"
       baseURL: "https://codestral.mistral.ai/v1/chat/completions"
