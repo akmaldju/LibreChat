@@ -107,37 +107,6 @@ endpoints:
     #   titleModel: "mixtral-8x7b-32768"
     #   modelDisplayLabel: "groq"
  
-    # Mistral AI API
-    - name: "Mistral"
-      apiKey: "${MISTRAL_API_KEY}"
-      baseURL: "https://api.mistral.ai/v1"
-      models:
-        default: [
-          "mistral-tiny",
-          "mistral-small",
-          "mistral-medium",
-          "mistral-large-latest"
-          ]
-        fetch: true
-      titleConvo: true
-      titleModel: "mistral-tiny"
-      modelDisplayLabel: "Mistral"
-      dropParams: ["stop", "user", "frequency_penalty", "presence_penalty"]
-
-    # Codestral AI API
-    - name: "Codestral"
-      apiKey: "${CODESTRAL_API_KEY}"
-      baseURL: "https://codestral.mistral.ai/v1/chat/completions"
-      models:
-        default: [
-          "test"
-          ]
-        fetch: true
-      titleConvo: true
-      titleModel: "test"
-      modelDisplayLabel: "Codestral"
-      # dropParams: ["stop", "user", "frequency_penalty", "presence_penalty"]
- 
     # OpenRouter.ai
     - name: "OpenRouter"
       apiKey: "${OPENROUTER_KEY}"
@@ -402,3 +371,19 @@ endpoints:
       titleModel: "NousResearch/Nous-Hermes-2-Mixtral-8x7B-DPO"
       dropParams: ["top_p"]
       modelDisplayLabel: "HuggingFace"
+    # Mistral AI API
+    - name: "Mistral"
+      apiKey: "${MISTRAL_API_KEY}"
+      baseURL: "https://api.mistral.ai/v1"
+      models:
+        default: [
+          "mistral-tiny",
+          "mistral-small",
+          "mistral-medium",
+          "mistral-large-latest"
+          ]
+        fetch: true
+      titleConvo: true
+      titleModel: "mistral-tiny"
+      modelDisplayLabel: "Mistral"
+      dropParams: ["stop", "user", "frequency_penalty", "presence_penalty"]
