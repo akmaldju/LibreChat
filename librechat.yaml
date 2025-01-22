@@ -374,6 +374,8 @@ endpoints:
           # "stabilityai/stable-diffusion-3.5-large",
           # "bigcode/starcoder2-15b",
           "codellama/CodeLlama-34b-Instruct-hf",
+          "deepseek-ai/DeepSeek-R1-Distill-Qwen-32B",
+          "deepseek-ai/DeepSeek-R1-Distill-Qwen-1.5B"
         ]
         # fetch: true
       titleConvo: true
