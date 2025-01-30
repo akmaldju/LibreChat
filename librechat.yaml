@@ -103,11 +103,10 @@ endpoints:
           "google/gemini-pro-1.5-exp",
           "google/gemini-flash-1.5-exp",
           "google/gemini-flash-1.5-8b-exp",
-          "google/gemini-exp-1206:free",
-          # "google/gemini-exp-1121:free",
-          # "google/gemini-exp-1114:free",
           "google/learnlm-1.5-pro-experimental:free",
           "google/gemma-2-9b-it:free",
+          "--DeepSeek--",
+          "deepseek/deepseek-r1:free",
           "--Meta--",
           "meta-llama/llama-3.2-90b-vision-instruct:free",
           "meta-llama/llama-3.2-11b-vision-instruct:free",
@@ -126,7 +125,8 @@ endpoints:
           "openchat/openchat-7b:free",
           "undi95/toppy-m-7b:free",
           "huggingfaceh4/zephyr-7b-beta:free",
-          "gryphe/mythomax-l2-13b:free"
+          "gryphe/mythomax-l2-13b:free",
+          "sophosympatheia/rogue-rose-103b-v0.2:free"
           ]
         fetch: false
       titleConvo: true
@@ -149,10 +149,10 @@ endpoints:
           "google/gemini-flash-1.5-exp",
           "google/gemini-flash-1.5-8b-exp",
           "google/gemini-exp-1206:free",
-          # "google/gemini-exp-1121:free",
-          # "google/gemini-exp-1114:free",
           "google/learnlm-1.5-pro-experimental:free",
           "google/gemma-2-9b-it:free",
+          "--DeepSeek--",
+          "deepseek/deepseek-r1:free",
           "--Meta--",
           "meta-llama/llama-3.2-90b-vision-instruct:free",
           "meta-llama/llama-3.2-11b-vision-instruct:free",
@@ -171,7 +171,8 @@ endpoints:
           "openchat/openchat-7b:free",
           "undi95/toppy-m-7b:free",
           "huggingfaceh4/zephyr-7b-beta:free",
-          "gryphe/mythomax-l2-13b:free"
+          "gryphe/mythomax-l2-13b:free",
+          "sophosympatheia/rogue-rose-103b-v0.2:free"
           ]
         fetch: false
       titleConvo: true
@@ -198,6 +199,8 @@ endpoints:
           # "google/gemini-exp-1114:free",
           "google/learnlm-1.5-pro-experimental:free",
           "google/gemma-2-9b-it:free",
+          "--DeepSeek--",
+          "deepseek/deepseek-r1:free",
           "--Meta--",
           "meta-llama/llama-3.2-90b-vision-instruct:free",
           "meta-llama/llama-3.2-11b-vision-instruct:free",
@@ -216,7 +219,8 @@ endpoints:
           "openchat/openchat-7b:free",
           "undi95/toppy-m-7b:free",
           "huggingfaceh4/zephyr-7b-beta:free",
-          "gryphe/mythomax-l2-13b:free"
+          "gryphe/mythomax-l2-13b:free",
+          "sophosympatheia/rogue-rose-103b-v0.2:free"
           ]
         fetch: false
       titleConvo: true
