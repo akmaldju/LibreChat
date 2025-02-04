@@ -332,10 +332,17 @@ endpoints:
       baseURL: 'https://api-inference.huggingface.co/v1'
       models:
         default: [
-          "NousResearch/Nous-Hermes-2-Mixtral-8x7B-DPO",
+          "mistralai/Mistral-Small-24B-Instruct-2501",
+          "--NEW--",
+          "mistralai/Mistral-Small-24B-Instruct-2501",
+          "deepseek-ai/DeepSeek-R1-Distill-Qwen-32B",
+          "deepseek-ai/DeepSeek-R1-Distill-Qwen-1.5B",
           "--Google--",
           "google/gemma-1.1-2b-it",
           "google/gemma-1.1-7b-it",
+          "--DeepSeek--",
+          "deepseek-ai/DeepSeek-R1-Distill-Qwen-32B",
+          "deepseek-ai/DeepSeek-R1-Distill-Qwen-1.5B",
           "--HuggingFace--",
           "HuggingFaceH4/starchat2-15b-v0.1",
           "HuggingFaceH4/zephyr-7b-beta",
@@ -347,6 +354,7 @@ endpoints:
           "microsoft/Phi-3.5-mini-instruct",
           "microsoft/Phi-3-mini-4k-instruct",
           "--MistralAI--",
+          "mistralai/Mistral-Small-24B-Instruct-2501",
           "mistralai/Mistral-7B-Instruct-v0.3",
           "--Qwen--",
           "Qwen/Qwen2.5-72B-Instruct",
@@ -360,9 +368,8 @@ endpoints:
           # "stabilityai/stable-diffusion-xl-base-1.0",
           # "stabilityai/stable-diffusion-3.5-large",
           # "bigcode/starcoder2-15b",
-          "codellama/CodeLlama-34b-Instruct-hf",
-          "deepseek-ai/DeepSeek-R1-Distill-Qwen-32B",
-          "deepseek-ai/DeepSeek-R1-Distill-Qwen-1.5B"
+          "NousResearch/Nous-Hermes-2-Mixtral-8x7B-DPO",
+          "codellama/CodeLlama-34b-Instruct-hf"
         ]
         # fetch: true
       titleConvo: true
