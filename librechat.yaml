@@ -401,3 +401,19 @@ endpoints:
       titleConvo: true
       titleModel: "deepseek-r1-distill-llama-70b"
       modelDisplayLabel: "groq"
+    
+    # SambaNova Cloud
+    - name: "SambaNova"
+      apiKey: "${SAMBANOVA_KEY}"
+      baseURL: "https://api.sambanova.ai/v1"
+      models:
+        default: [
+          "DeepSeek-R1-Distill-Llama-70B",
+          ]
+        fetch: true
+      titleConvo: true
+      titleModel: "DeepSeek-R1-Distill-Llama-70B"
+      summarize: false
+      summaryModel: "DeepSeek-R1-Distill-Llama-70B"
+      forcePrompt: false
+      modelDisplayLabel: "SambaNova"
