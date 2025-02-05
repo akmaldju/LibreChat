@@ -97,6 +97,12 @@ endpoints:
       models:
         default: [
           "google/gemini-2.0-flash-exp:free",
+          "--NEW--",
+          "qwen/qwen2.5-vl-72b-instruct:free",
+          "qwen/qwen-vl-plus:free",
+          "nvidia/llama-3.1-nemotron-70b-instruct:free",
+          "deepseek/deepseek-r1:free",
+          "sophosympatheia/rogue-rose-103b-v0.2:free",
           "--Google--",
           # "google/gemini-2.0-flash-exp:free",
           "google/gemini-2.0-flash-thinking-exp:free",
@@ -142,6 +148,12 @@ endpoints:
       models:
         default: [
           "google/gemini-2.0-flash-exp:free",
+          "--NEW--",
+          "qwen/qwen2.5-vl-72b-instruct:free",
+          "qwen/qwen-vl-plus:free",
+          "nvidia/llama-3.1-nemotron-70b-instruct:free",
+          "deepseek/deepseek-r1:free",
+          "sophosympatheia/rogue-rose-103b-v0.2:free",
           "--Google--",
           # "google/gemini-2.0-flash-exp:free",
           "google/gemini-2.0-flash-thinking-exp:free",
@@ -188,6 +200,12 @@ endpoints:
       models:
         default: [
           "google/gemini-2.0-flash-exp:free",
+          "--NEW--",
+          "qwen/qwen2.5-vl-72b-instruct:free",
+          "qwen/qwen-vl-plus:free",
+          "nvidia/llama-3.1-nemotron-70b-instruct:free",
+          "deepseek/deepseek-r1:free",
+          "sophosympatheia/rogue-rose-103b-v0.2:free",
           "--Google--",
           # "google/gemini-2.0-flash-exp:free",
           "google/gemini-2.0-flash-thinking-exp:free",
