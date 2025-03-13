@@ -315,6 +315,8 @@ endpoints:
       models:
         default: [
           "NousResearch/Nous-Hermes-2-Mixtral-8x7B-DPO",
+          "--NEW--",
+          "Qwen/QwQ-32B",
           "--Google--",
           "google/gemma-1.1-2b-it",
           "google/gemma-1.1-7b-it",
