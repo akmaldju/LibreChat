@@ -98,6 +98,7 @@ endpoints:
         default: [
           "google/gemini-2.0-flash-exp:free",
           "--NEW--",
+          "mistralai/mistral-small-3.1-24b-instruct:free",
           "rekaai/reka-flash-3:free",
           "google/gemma-3-27b-it:free",
           "deepseek/deepseek-r1-zero:free",
@@ -158,6 +159,7 @@ endpoints:
         default: [
           "google/gemini-2.0-flash-exp:free",
           "--NEW--",
+          "mistralai/mistral-small-3.1-24b-instruct:free",
           "rekaai/reka-flash-3:free",
           "google/gemma-3-27b-it:free",
           "deepseek/deepseek-r1-zero:free",
@@ -218,6 +220,7 @@ endpoints:
         default: [
           "google/gemini-2.0-flash-exp:free",
           "--NEW--",
+          "mistralai/mistral-small-3.1-24b-instruct:free",
           "rekaai/reka-flash-3:free",
           "google/gemma-3-27b-it:free",
           "deepseek/deepseek-r1-zero:free",
