@@ -98,6 +98,8 @@ endpoints:
         default: [
           "google/gemini-2.0-flash-exp:free",
           "--NEW--",
+          "meta-llama/llama-4-maverick:free",
+          "meta-llama/llama-4-scout:free",
           "openrouter/quasar-alpha",
           "deepseek/deepseek-v3-base:free",
           "bytedance-research/ui-tars-72b:free",
@@ -167,6 +169,8 @@ endpoints:
         default: [
           "google/gemini-2.0-flash-exp:free",
           "--NEW--",
+          "meta-llama/llama-4-maverick:free",
+          "meta-llama/llama-4-scout:free",
           "openrouter/quasar-alpha",
           "deepseek/deepseek-v3-base:free",
           "bytedance-research/ui-tars-72b:free",
@@ -236,6 +240,8 @@ endpoints:
         default: [
           "google/gemini-2.0-flash-exp:free",
           "--NEW--",
+          "meta-llama/llama-4-maverick:free",
+          "meta-llama/llama-4-scout:free",
           "openrouter/quasar-alpha",
           "deepseek/deepseek-v3-base:free",
           "bytedance-research/ui-tars-72b:free",
