@@ -14,62 +14,66 @@ registration:
     - github
     - google
     - openid
+
+# Define the OpenRouter model list once
+openrouter_models: &openrouter_model_list
+  default:
+    - google/gemini-2.0-flash-exp:free
+    - '--NEW--'
+    - meta-llama/llama-4-maverick:free
+    - meta-llama/llama-4-scout:free
+    - google/gemini-2.5-pro-exp-03-25:free
+    - nvidia/llama-3.1-nemotron-ultra-253b-v1:free
+    - nvidia/llama-3.3-nemotron-super-49b-v1:free
+    - nvidia/llama-3.1-nemotron-nano-8b-v1:free
+    - '--Google--'
+    - google/gemini-2.0-pro-exp-02-05:free
+    - google/gemini-2.0-flash-lite-preview-02-05:free
+    - google/gemini-2.0-flash-thinking-exp:free
+    - google/gemma-3-27b-it:free
+    - google/learnlm-1.5-pro-experimental:free
+    - '--DeepSeek--'
+    - deepseek/deepseek-r1:free
+    - deepseek/deepseek-r1-zero:free
+    - deepseek/deepseek-v3-base:free
+    - deepseek/deepseek-chat-v3-0324:free
+    - '--Meta--'
+    - meta-llama/llama-3.2-90b-vision-instruct:free
+    - meta-llama/llama-3.2-11b-vision-instruct:free
+    - meta-llama/llama-3.2-3b-instruct:free
+    - meta-llama/llama-3.2-1b-instruct:free
+    - meta-llama/llama-3.1-405b-instruct:free
+    - meta-llama/llama-3.1-70b-instruct:free
+    - meta-llama/llama-3.1-8b-instruct:free
+    - '--Qwen--'
+    - qwen/qwen2.5-vl-32b-instruct:free
+    - qwen/qwq-32b:free
+    - qwen/qwen2.5-vl-72b-instruct:free
+    - qwen/qwen-vl-plus:free
+    - '--Others--'
+    - bytedance-research/ui-tars-72b:free
+    - featherless/qwerky-72b:free
+    - open-r1/olympiccoder-32b:free
+    - mistralai/mistral-small-3.1-24b-instruct:free
+    - rekaai/reka-flash-3:free
+    - moonshotai/moonlight-16b-a3b-instruct:free
+    - openchat/openchat-7b:free
+    - undi95/toppy-m-7b:free
+    - huggingfaceh4/zephyr-7b-beta:free
+    - gryphe/mythomax-l2-13b:free
+    - sophosympatheia/rogue-rose-103b-v0.2:free
+    - nvidia/llama-3.1-nemotron-70b-instruct:free
+    - cognitivecomputations/dolphin3.0-r1-mistral-24b:free
+    - cognitivecomputations/dolphin3.0-mistral-24b:free
+    - '--Outdated--'
+  fetch: false
+
 endpoints:
   custom:
     - name: OpenRouter
       apiKey: ${OPENROUTER_KEY}
       baseURL: https://openrouter.ai/api/v1
-      models:
-        default:
-          - google/gemini-2.0-flash-exp:free
-          - '--NEW--'
-          - meta-llama/llama-4-maverick:free
-          - meta-llama/llama-4-scout:free
-          - google/gemini-2.5-pro-exp-03-25:free
-          - nvidia/llama-3.1-nemotron-ultra-253b-v1:free
-          - nvidia/llama-3.3-nemotron-super-49b-v1:free
-          - nvidia/llama-3.1-nemotron-nano-8b-v1:free
-          - '--Google--'
-          - google/gemini-2.0-pro-exp-02-05:free
-          - google/gemini-2.0-flash-lite-preview-02-05:free
-          - google/gemini-2.0-flash-thinking-exp:free
-          - google/gemma-3-27b-it:free
-          - google/learnlm-1.5-pro-experimental:free
-          - '--DeepSeek--'
-          - deepseek/deepseek-r1:free
-          - deepseek/deepseek-r1-zero:free
-          - deepseek/deepseek-v3-base:free
-          - deepseek/deepseek-chat-v3-0324:free
-          - '--Meta--'
-          - meta-llama/llama-3.2-90b-vision-instruct:free
-          - meta-llama/llama-3.2-11b-vision-instruct:free
-          - meta-llama/llama-3.2-3b-instruct:free
-          - meta-llama/llama-3.2-1b-instruct:free
-          - meta-llama/llama-3.1-405b-instruct:free
-          - meta-llama/llama-3.1-70b-instruct:free
-          - meta-llama/llama-3.1-8b-instruct:free
-          - '--Qwen--'
-          - qwen/qwen2.5-vl-32b-instruct:free
-          - qwen/qwq-32b:free
-          - qwen/qwen2.5-vl-72b-instruct:free
-          - qwen/qwen-vl-plus:free
-          - '--Others--'
-          - bytedance-research/ui-tars-72b:free
-          - featherless/qwerky-72b:free
-          - open-r1/olympiccoder-32b:free
-          - mistralai/mistral-small-3.1-24b-instruct:free
-          - rekaai/reka-flash-3:free
-          - moonshotai/moonlight-16b-a3b-instruct:free
-          - openchat/openchat-7b:free
-          - undi95/toppy-m-7b:free
-          - huggingfaceh4/zephyr-7b-beta:free
-          - gryphe/mythomax-l2-13b:free
-          - sophosympatheia/rogue-rose-103b-v0.2:free
-          - nvidia/llama-3.1-nemotron-70b-instruct:free
-          - cognitivecomputations/dolphin3.0-r1-mistral-24b:free
-          - cognitivecomputations/dolphin3.0-mistral-24b:free
-          - '--Outdated--'
-        fetch: false
+      models: *openrouter_model_list  # Use the shared model list
       titleConvo: true
       titleModel: google/gemini-2.0-flash-exp:free
       summarize: false
@@ -79,57 +83,7 @@ endpoints:
     - name: OpenRouter Backup
       apiKey: ${OPENROUTER_KEY_2}
       baseURL: https://openrouter.ai/api/v1
-      models:
-        default:
-          - google/gemini-2.0-flash-exp:free
-          - '--NEW--'
-          - meta-llama/llama-4-maverick:free
-          - meta-llama/llama-4-scout:free
-          - google/gemini-2.5-pro-exp-03-25:free
-          - nvidia/llama-3.1-nemotron-ultra-253b-v1:free
-          - nvidia/llama-3.3-nemotron-super-49b-v1:free
-          - nvidia/llama-3.1-nemotron-nano-8b-v1:free
-          - '--Google--'
-          - google/gemini-2.0-pro-exp-02-05:free
-          - google/gemini-2.0-flash-lite-preview-02-05:free
-          - google/gemini-2.0-flash-thinking-exp:free
-          - google/gemma-3-27b-it:free
-          - google/learnlm-1.5-pro-experimental:free
-          - '--DeepSeek--'
-          - deepseek/deepseek-r1:free
-          - deepseek/deepseek-r1-zero:free
-          - deepseek/deepseek-v3-base:free
-          - deepseek/deepseek-chat-v3-0324:free
-          - '--Meta--'
-          - meta-llama/llama-3.2-90b-vision-instruct:free
-          - meta-llama/llama-3.2-11b-vision-instruct:free
-          - meta-llama/llama-3.2-3b-instruct:free
-          - meta-llama/llama-3.2-1b-instruct:free
-          - meta-llama/llama-3.1-405b-instruct:free
-          - meta-llama/llama-3.1-70b-instruct:free
-          - meta-llama/llama-3.1-8b-instruct:free
-          - '--Qwen--'
-          - qwen/qwen2.5-vl-32b-instruct:free
-          - qwen/qwq-32b:free
-          - qwen/qwen2.5-vl-72b-instruct:free
-          - qwen/qwen-vl-plus:free
-          - '--Others--'
-          - bytedance-research/ui-tars-72b:free
-          - featherless/qwerky-72b:free
-          - open-r1/olympiccoder-32b:free
-          - mistralai/mistral-small-3.1-24b-instruct:free
-          - rekaai/reka-flash-3:free
-          - moonshotai/moonlight-16b-a3b-instruct:free
-          - openchat/openchat-7b:free
-          - undi95/toppy-m-7b:free
-          - huggingfaceh4/zephyr-7b-beta:free
-          - gryphe/mythomax-l2-13b:free
-          - sophosympatheia/rogue-rose-103b-v0.2:free
-          - nvidia/llama-3.1-nemotron-70b-instruct:free
-          - cognitivecomputations/dolphin3.0-r1-mistral-24b:free
-          - cognitivecomputations/dolphin3.0-mistral-24b:free
-          - '--Outdated--'
-        fetch: false
+      models: *openrouter_model_list # Use the shared model list
       titleConvo: true
       titleModel: google/gemini-2.0-flash-exp:free
       summarize: false
@@ -139,57 +93,7 @@ endpoints:
     - name: OpenRouter Own
       apiKey: user_provided
       baseURL: https://openrouter.ai/api/v1
-      models:
-        default:
-          - google/gemini-2.0-flash-exp:free
-          - '--NEW--'
-          - meta-llama/llama-4-maverick:free
-          - meta-llama/llama-4-scout:free
-          - google/gemini-2.5-pro-exp-03-25:free
-          - nvidia/llama-3.1-nemotron-ultra-253b-v1:free
-          - nvidia/llama-3.3-nemotron-super-49b-v1:free
-          - nvidia/llama-3.1-nemotron-nano-8b-v1:free
-          - '--Google--'
-          - google/gemini-2.0-pro-exp-02-05:free
-          - google/gemini-2.0-flash-lite-preview-02-05:free
-          - google/gemini-2.0-flash-thinking-exp:free
-          - google/gemma-3-27b-it:free
-          - google/learnlm-1.5-pro-experimental:free
-          - '--DeepSeek--'
-          - deepseek/deepseek-r1:free
-          - deepseek/deepseek-r1-zero:free
-          - deepseek/deepseek-v3-base:free
-          - deepseek/deepseek-chat-v3-0324:free
-          - '--Meta--'
-          - meta-llama/llama-3.2-90b-vision-instruct:free
-          - meta-llama/llama-3.2-11b-vision-instruct:free
-          - meta-llama/llama-3.2-3b-instruct:free
-          - meta-llama/llama-3.2-1b-instruct:free
-          - meta-llama/llama-3.1-405b-instruct:free
-          - meta-llama/llama-3.1-70b-instruct:free
-          - meta-llama/llama-3.1-8b-instruct:free
-          - '--Qwen--'
-          - qwen/qwen2.5-vl-32b-instruct:free
-          - qwen/qwq-32b:free
-          - qwen/qwen2.5-vl-72b-instruct:free
-          - qwen/qwen-vl-plus:free
-          - '--Others--'
-          - bytedance-research/ui-tars-72b:free
-          - featherless/qwerky-72b:free
-          - open-r1/olympiccoder-32b:free
-          - mistralai/mistral-small-3.1-24b-instruct:free
-          - rekaai/reka-flash-3:free
-          - moonshotai/moonlight-16b-a3b-instruct:free
-          - openchat/openchat-7b:free
-          - undi95/toppy-m-7b:free
-          - huggingfaceh4/zephyr-7b-beta:free
-          - gryphe/mythomax-l2-13b:free
-          - sophosympatheia/rogue-rose-103b-v0.2:free
-          - nvidia/llama-3.1-nemotron-70b-instruct:free
-          - cognitivecomputations/dolphin3.0-r1-mistral-24b:free
-          - cognitivecomputations/dolphin3.0-mistral-24b:free
-          - '--Outdated--'
-        fetch: false
+      models: *openrouter_model_list  # Use the shared model list
       titleConvo: true
       titleModel: google/gemini-2.0-flash-exp:free
       summarize: false
