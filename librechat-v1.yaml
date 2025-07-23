@@ -1,0 +1,250 @@
+version: 1.0.8
+cache: true
+interface:
+  privacyPolicy:
+    externalUrl: https://librechat.ai/privacy-policy
+    openNewTab: true
+  termsOfService:
+    externalUrl: https://librechat.ai/tos
+    openNewTab: true
+registration:
+  socialLogins:
+    - discord
+    - facebook
+    - github
+    - google
+    - openid
+endpoints:
+  custom:
+    - name: OpenRouter
+      apiKey: ${OPENROUTER_KEY}
+      baseURL: https://openrouter.ai/api/v1
+      models:
+        default:
+          - google/gemini-2.0-flash-exp:free
+          - '--NEW--'
+          - moonshotai/kimi-k2:free
+          - cognitivecomputations/dolphin-mistral-24b-venice-edition:free
+          - google/gemma-3n-e2b-it:free
+          - tencent/hunyuan-a13b-instruct:free
+          - mistralai/mistral-small-3.2-24b-instruct:free
+          - moonshotai/kimi-dev-72b:free
+          - deepseek/deepseek-r1-0528:free
+          - mistralai/devstral-small-2505:free
+          - microsoft/mai-ds-r1:free
+          - moonshotai/kimi-vl-a3b-thinking:free
+          - '--Google--'
+          - google/gemini-2.5-pro-exp-03-25
+          - google/gemma-3-27b-it:free
+          - google/gemma-3-12b-it:free
+          - google/gemma-3n-e4b-it:free
+          - google/gemma-3n-e4b-it:free
+          - '--DeepSeek--'
+          - deepseek/deepseek-r1:free
+          - deepseek/deepseek-chat-v3-0324:free
+          - deepseek/deepseek-r1-0528-qwen3-8b:free
+          - deepseek/deepseek-r1-distill-llama-70b:free
+          - '--Meta--'
+          - meta-llama/llama-3.3-70b-instruct:free
+          - meta-llama/llama-3.2-11b-vision-instruct:free
+          - meta-llama/llama-3.2-3b-instruct:free
+          - meta-llama/llama-3.1-405b-instruct:free
+          - '--Qwen--'
+          - qwen/qwen3-235b-a22b:free
+          - qwen/qwen3-235b-a22b-07-25:free
+          - qwen/qwen3-30b-a3b:free
+          - qwen/qwen2.5-vl-32b-instruct:free
+          - '--Others--'
+          - nvidia/llama-3.1-nemotron-ultra-253b-v1:free
+          - '--Outdated--'
+        fetch: false
+      titleConvo: true
+      titleModel: google/gemini-2.0-flash-exp:free
+      summarize: false
+      summaryModel: google/gemini-2.0-flash-exp:free
+      forcePrompt: false
+      modelDisplayLabel: OpenRouter
+    - name: OpenRouter Backup
+      apiKey: ${OPENROUTER_KEY_2}
+      baseURL: https://openrouter.ai/api/v1
+      models:
+        default:
+          - google/gemini-2.0-flash-exp:free
+          - '--NEW--'
+          - moonshotai/kimi-k2:free
+          - cognitivecomputations/dolphin-mistral-24b-venice-edition:free
+          - google/gemma-3n-e2b-it:free
+          - tencent/hunyuan-a13b-instruct:free
+          - mistralai/mistral-small-3.2-24b-instruct:free
+          - moonshotai/kimi-dev-72b:free
+          - deepseek/deepseek-r1-0528:free
+          - mistralai/devstral-small-2505:free
+          - microsoft/mai-ds-r1:free
+          - moonshotai/kimi-vl-a3b-thinking:free
+          - '--Google--'
+          - google/gemini-2.5-pro-exp-03-25
+          - google/gemma-3-27b-it:free
+          - google/gemma-3-12b-it:free
+          - google/gemma-3n-e4b-it:free
+          - google/gemma-3n-e4b-it:free
+          - '--DeepSeek--'
+          - deepseek/deepseek-r1:free
+          - deepseek/deepseek-chat-v3-0324:free
+          - deepseek/deepseek-r1-0528-qwen3-8b:free
+          - deepseek/deepseek-r1-distill-llama-70b:free
+          - '--Meta--'
+          - meta-llama/llama-3.3-70b-instruct:free
+          - meta-llama/llama-3.2-11b-vision-instruct:free
+          - meta-llama/llama-3.2-3b-instruct:free
+          - meta-llama/llama-3.1-405b-instruct:free
+          - '--Qwen--'
+          - qwen/qwen3-235b-a22b:free
+          - qwen/qwen3-235b-a22b-07-25:free
+          - qwen/qwen3-30b-a3b:free
+          - qwen/qwen2.5-vl-32b-instruct:free
+          - '--Others--'
+          - nvidia/llama-3.1-nemotron-ultra-253b-v1:free
+          - '--Outdated--'
+        fetch: false
+      titleConvo: true
+      titleModel: google/gemini-2.0-flash-exp:free
+      summarize: false
+      summaryModel: google/gemini-2.0-flash-exp:free
+      forcePrompt: false
+      modelDisplayLabel: OpenRouter Backup
+    - name: OpenRouter Own
+      apiKey: user_provided
+      baseURL: https://openrouter.ai/api/v1
+      models:
+        default:
+          - google/gemini-2.0-flash-exp:free
+          - '--NEW--'
+          - moonshotai/kimi-k2:free
+          - cognitivecomputations/dolphin-mistral-24b-venice-edition:free
+          - google/gemma-3n-e2b-it:free
+          - tencent/hunyuan-a13b-instruct:free
+          - mistralai/mistral-small-3.2-24b-instruct:free
+          - moonshotai/kimi-dev-72b:free
+          - deepseek/deepseek-r1-0528:free
+          - mistralai/devstral-small-2505:free
+          - microsoft/mai-ds-r1:free
+          - moonshotai/kimi-vl-a3b-thinking:free
+          - '--Google--'
+          - google/gemini-2.5-pro-exp-03-25
+          - google/gemma-3-27b-it:free
+          - google/gemma-3-12b-it:free
+          - google/gemma-3n-e4b-it:free
+          - google/gemma-3n-e4b-it:free
+          - '--DeepSeek--'
+          - deepseek/deepseek-r1:free
+          - deepseek/deepseek-chat-v3-0324:free
+          - deepseek/deepseek-r1-0528-qwen3-8b:free
+          - deepseek/deepseek-r1-distill-llama-70b:free
+          - '--Meta--'
+          - meta-llama/llama-3.3-70b-instruct:free
+          - meta-llama/llama-3.2-11b-vision-instruct:free
+          - meta-llama/llama-3.2-3b-instruct:free
+          - meta-llama/llama-3.1-405b-instruct:free
+          - '--Qwen--'
+          - qwen/qwen3-235b-a22b:free
+          - qwen/qwen3-235b-a22b-07-25:free
+          - qwen/qwen3-30b-a3b:free
+          - qwen/qwen2.5-vl-32b-instruct:free
+          - '--Others--'
+          - nvidia/llama-3.1-nemotron-ultra-253b-v1:free
+          - '--Outdated--'
+        fetch: false
+      titleConvo: true
+      titleModel: google/gemini-2.0-flash-exp:free
+      summarize: false
+      summaryModel: google/gemini-2.0-flash-exp:free
+      forcePrompt: false
+      modelDisplayLabel: OpenRouter Own
+    - name: HuggingFace
+      apiKey: ${HUGGINGFACE_TOKEN}
+      baseURL: https://api-inference.huggingface.co/v1
+      models:
+        default:
+          - NousResearch/Nous-Hermes-2-Mixtral-8x7B-DPO
+          - '--NEW--'
+          - Qwen/QwQ-32B
+          - '--Google--'
+          - google/gemma-1.1-2b-it
+          - google/gemma-1.1-7b-it
+          - '--HuggingFace--'
+          - HuggingFaceH4/starchat2-15b-v0.1
+          - HuggingFaceH4/zephyr-7b-beta
+          - '--Meta--'
+          - meta-llama/Llama-3.2-11B-Vision-Instruct
+          - meta-llama/Llama-3.2-3B-Instruct
+          - meta-llama/Llama-3.2-1B-Instruct
+          - '--Microsoft--'
+          - microsoft/Phi-3.5-mini-instruct
+          - microsoft/Phi-3-mini-4k-instruct
+          - '--MistralAI--'
+          - mistralai/Mistral-7B-Instruct-v0.3
+          - '--Qwen--'
+          - Qwen/Qwen2.5-72B-Instruct
+          - Qwen/QwQ-32B-Preview
+          - Qwen/Qwen2.5-Coder-32B-Instruct
+          - '--Others--'
+          - codellama/CodeLlama-34b-Instruct-hf
+          - deepseek-ai/DeepSeek-R1-Distill-Qwen-32B
+          - deepseek-ai/DeepSeek-R1-Distill-Qwen-1.5B
+      titleConvo: true
+      titleModel: NousResearch/Nous-Hermes-2-Mixtral-8x7B-DPO
+      dropParams:
+        - top_p
+      modelDisplayLabel: HuggingFace
+    - name: Mistral
+      apiKey: ${MISTRAL_API_KEY}
+      baseURL: https://api.mistral.ai/v1
+      models:
+        default:
+          - mistral-tiny
+          - mistral-small
+          - mistral-medium
+          - mistral-large-latest
+        fetch: true
+      titleConvo: true
+      titleModel: mistral-tiny
+      modelDisplayLabel: Mistral
+      dropParams:
+        - stop
+        - user
+        - frequency_penalty
+        - presence_penalty
+    - name: Groq
+      apiKey: ${GROQ_API_KEY}
+      baseURL: https://api.groq.com/openai/v1/
+      models:
+        default:
+          - deepseek-r1-distill-llama-70b
+          - meta-llama/llama-4-maverick-17b-128e-instruct
+          - meta-llama/llama-4-scout-17b-16e-instruct
+          - meta-llama/llama-prompt-guard-2-22m
+          - meta-llama/llama-prompt-guard-2-86m
+          - mistral-saba-24b
+          - moonshotai/kimi-k2-instruct
+          - playai-tts
+          - qwen/qwen3-32b
+        fetch: false
+      titleConvo: true
+      titleModel: mixtral-8x7b-32768
+      modelDisplayLabel: groq
+    - name: together.ai
+      apiKey: ${TOGETHERAI_API_KEY}
+      baseURL: https://api.together.xyz
+      models:
+        default:
+          - deepseek-ai/DeepSeek-R1-Distill-Llama-70B-free
+          - meta-llama/Llama-3.3-70B-Instruct-Turbo-Free
+          - meta-llama/Llama-Vision-Free
+          - black-forest-labs/FLUX.1-schnell-Free
+        fetch: false
+      titleConvo: true
+      titleModel: meta-llama/Llama-3.3-70B-Instruct-Turbo-Free
+      summarize: false
+      summaryModel: meta-llama/Llama-3.3-70B-Instruct-Turbo-Free
+      forcePrompt: false
+      modelDisplayLabel: together.ai
