@@ -14,6 +14,18 @@ registration:
     - github
     - google
     - openid
+mcpServers:
+  tavily-mcp:
+    command: npx
+    args:
+      - -y
+      - "@smithery/cli@latest"
+      - run
+      - "@tavily-ai/tavily-mcp"
+      - --key
+      - 1e30a134-aefd-42d1-b3e7-6719d4f3dabc
+      - --profile
+      - convincing-swordtail-hqJDjV
 endpoints:
   custom:
     - name: OpenRouter
