@@ -18,10 +18,9 @@ mcpServers:
   tavily-mcp:
     command: npx
     args:
-      - "-y @smithery/cli@latest"
-      - "run @tavily-ai/tavily-mcp"
-      - "--key 1e30a134-aefd-42d1-b3e7-6719d4f3dabc"
-      - "--profile convincing-swordtail-hqJDjV"
+      - -y
+      - mcp-remote
+      - https://mcp.tavily.com/mcp/?tavilyApiKey=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
 endpoints:
   custom:
     - name: OpenRouter
