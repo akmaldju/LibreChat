@@ -21,6 +21,11 @@ mcpServers:
       - -y
       - mcp-remote
       - https://mcp.tavily.com/mcp/?tavilyApiKey=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
+  coingecko:
+    command: npx
+    args:
+      - mcp-remote
+      - https://mcp.api.coingecko.com/sse
 endpoints:
   custom:
     - name: OpenRouter
