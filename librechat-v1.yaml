@@ -35,27 +35,22 @@ endpoints:
         default:
           - google/gemini-2.0-flash-exp:free
           - '--NEW--'
+          - z-ai/glm-4.5-air:free
+          - openai/gpt-oss-20b:free
           - moonshotai/kimi-k2:free
-          - cognitivecomputations/dolphin-mistral-24b-venice-edition:free
-          - google/gemma-3n-e2b-it:free
-          - tencent/hunyuan-a13b-instruct:free
-          - mistralai/mistral-small-3.2-24b-instruct:free
-          - moonshotai/kimi-dev-72b:free
-          - deepseek/deepseek-r1-0528:free
-          - mistralai/devstral-small-2505:free
-          - microsoft/mai-ds-r1:free
-          - moonshotai/kimi-vl-a3b-thinking:free
           - '--Google--'
           - google/gemini-2.5-pro-exp-03-25
           - google/gemma-3-27b-it:free
           - google/gemma-3-12b-it:free
           - google/gemma-3n-e4b-it:free
           - google/gemma-3n-e4b-it:free
+          - google/gemma-3n-e2b-it:free
           - '--DeepSeek--'
           - deepseek/deepseek-r1:free
           - deepseek/deepseek-chat-v3-0324:free
           - deepseek/deepseek-r1-0528-qwen3-8b:free
           - deepseek/deepseek-r1-distill-llama-70b:free
+          - deepseek/deepseek-r1-0528:free
           - '--Meta--'
           - meta-llama/llama-3.3-70b-instruct:free
           - meta-llama/llama-3.2-11b-vision-instruct:free
@@ -68,6 +63,13 @@ endpoints:
           - qwen/qwen2.5-vl-32b-instruct:free
           - '--Others--'
           - nvidia/llama-3.1-nemotron-ultra-253b-v1:free
+          - cognitivecomputations/dolphin-mistral-24b-venice-edition:free
+          - tencent/hunyuan-a13b-instruct:free
+          - mistralai/mistral-small-3.2-24b-instruct:free
+          - moonshotai/kimi-dev-72b:free
+          - mistralai/devstral-small-2505:free
+          - microsoft/mai-ds-r1:free
+          - moonshotai/kimi-vl-a3b-thinking:free
           - '--Outdated--'
         fetch: false
       titleConvo: true
@@ -83,27 +85,22 @@ endpoints:
         default:
           - google/gemini-2.0-flash-exp:free
           - '--NEW--'
+          - z-ai/glm-4.5-air:free
+          - openai/gpt-oss-20b:free
           - moonshotai/kimi-k2:free
-          - cognitivecomputations/dolphin-mistral-24b-venice-edition:free
-          - google/gemma-3n-e2b-it:free
-          - tencent/hunyuan-a13b-instruct:free
-          - mistralai/mistral-small-3.2-24b-instruct:free
-          - moonshotai/kimi-dev-72b:free
-          - deepseek/deepseek-r1-0528:free
-          - mistralai/devstral-small-2505:free
-          - microsoft/mai-ds-r1:free
-          - moonshotai/kimi-vl-a3b-thinking:free
           - '--Google--'
           - google/gemini-2.5-pro-exp-03-25
           - google/gemma-3-27b-it:free
           - google/gemma-3-12b-it:free
           - google/gemma-3n-e4b-it:free
           - google/gemma-3n-e4b-it:free
+          - google/gemma-3n-e2b-it:free
           - '--DeepSeek--'
           - deepseek/deepseek-r1:free
           - deepseek/deepseek-chat-v3-0324:free
           - deepseek/deepseek-r1-0528-qwen3-8b:free
           - deepseek/deepseek-r1-distill-llama-70b:free
+          - deepseek/deepseek-r1-0528:free
           - '--Meta--'
           - meta-llama/llama-3.3-70b-instruct:free
           - meta-llama/llama-3.2-11b-vision-instruct:free
@@ -116,6 +113,13 @@ endpoints:
           - qwen/qwen2.5-vl-32b-instruct:free
           - '--Others--'
           - nvidia/llama-3.1-nemotron-ultra-253b-v1:free
+          - cognitivecomputations/dolphin-mistral-24b-venice-edition:free
+          - tencent/hunyuan-a13b-instruct:free
+          - mistralai/mistral-small-3.2-24b-instruct:free
+          - moonshotai/kimi-dev-72b:free
+          - mistralai/devstral-small-2505:free
+          - microsoft/mai-ds-r1:free
+          - moonshotai/kimi-vl-a3b-thinking:free
           - '--Outdated--'
         fetch: false
       titleConvo: true
@@ -131,27 +135,22 @@ endpoints:
         default:
           - google/gemini-2.0-flash-exp:free
           - '--NEW--'
+          - z-ai/glm-4.5-air:free
+          - openai/gpt-oss-20b:free
           - moonshotai/kimi-k2:free
-          - cognitivecomputations/dolphin-mistral-24b-venice-edition:free
-          - google/gemma-3n-e2b-it:free
-          - tencent/hunyuan-a13b-instruct:free
-          - mistralai/mistral-small-3.2-24b-instruct:free
-          - moonshotai/kimi-dev-72b:free
-          - deepseek/deepseek-r1-0528:free
-          - mistralai/devstral-small-2505:free
-          - microsoft/mai-ds-r1:free
-          - moonshotai/kimi-vl-a3b-thinking:free
           - '--Google--'
           - google/gemini-2.5-pro-exp-03-25
           - google/gemma-3-27b-it:free
           - google/gemma-3-12b-it:free
           - google/gemma-3n-e4b-it:free
           - google/gemma-3n-e4b-it:free
+          - google/gemma-3n-e2b-it:free
           - '--DeepSeek--'
           - deepseek/deepseek-r1:free
           - deepseek/deepseek-chat-v3-0324:free
           - deepseek/deepseek-r1-0528-qwen3-8b:free
           - deepseek/deepseek-r1-distill-llama-70b:free
+          - deepseek/deepseek-r1-0528:free
           - '--Meta--'
           - meta-llama/llama-3.3-70b-instruct:free
           - meta-llama/llama-3.2-11b-vision-instruct:free
@@ -164,6 +163,13 @@ endpoints:
           - qwen/qwen2.5-vl-32b-instruct:free
           - '--Others--'
           - nvidia/llama-3.1-nemotron-ultra-253b-v1:free
+          - cognitivecomputations/dolphin-mistral-24b-venice-edition:free
+          - tencent/hunyuan-a13b-instruct:free
+          - mistralai/mistral-small-3.2-24b-instruct:free
+          - moonshotai/kimi-dev-72b:free
+          - mistralai/devstral-small-2505:free
+          - microsoft/mai-ds-r1:free
+          - moonshotai/kimi-vl-a3b-thinking:free
           - '--Outdated--'
         fetch: false
       titleConvo: true
