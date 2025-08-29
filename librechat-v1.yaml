@@ -35,6 +35,9 @@ endpoints:
         default:
           - google/gemini-2.0-flash-exp:free
           - '--NEW--'
+          - google/gemini-2.5-flash-image-preview:free
+          - deepseek/deepseek-chat-v3.1:free
+          - openai/gpt-oss-120b:free
           - z-ai/glm-4.5-air:free
           - openai/gpt-oss-20b:free
           - moonshotai/kimi-k2:free
@@ -85,6 +88,9 @@ endpoints:
         default:
           - google/gemini-2.0-flash-exp:free
           - '--NEW--'
+          - google/gemini-2.5-flash-image-preview:free
+          - deepseek/deepseek-chat-v3.1:free
+          - openai/gpt-oss-120b:free
           - z-ai/glm-4.5-air:free
           - openai/gpt-oss-20b:free
           - moonshotai/kimi-k2:free
@@ -135,6 +141,9 @@ endpoints:
         default:
           - google/gemini-2.0-flash-exp:free
           - '--NEW--'
+          - google/gemini-2.5-flash-image-preview:free
+          - deepseek/deepseek-chat-v3.1:free
+          - openai/gpt-oss-120b:free
           - z-ai/glm-4.5-air:free
           - openai/gpt-oss-20b:free
           - moonshotai/kimi-k2:free
