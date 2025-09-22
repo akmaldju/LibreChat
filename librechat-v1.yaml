@@ -34,6 +34,8 @@ endpoints:
       models:
         default:
           - google/gemini-2.0-flash-exp:free
+          - x-ai/grok-4-fast:free
+          - nvidia/nemotron-nano-9b-v2:free
           - '--NEW--'
           - google/gemini-2.5-flash-image-preview:free
           - deepseek/deepseek-chat-v3.1:free
@@ -87,6 +89,8 @@ endpoints:
       models:
         default:
           - google/gemini-2.0-flash-exp:free
+          - x-ai/grok-4-fast:free
+          - nvidia/nemotron-nano-9b-v2:free
           - '--NEW--'
           - google/gemini-2.5-flash-image-preview:free
           - deepseek/deepseek-chat-v3.1:free
@@ -140,6 +144,8 @@ endpoints:
       models:
         default:
           - google/gemini-2.0-flash-exp:free
+          - x-ai/grok-4-fast:free
+          - nvidia/nemotron-nano-9b-v2:free
           - '--NEW--'
           - google/gemini-2.5-flash-image-preview:free
           - deepseek/deepseek-chat-v3.1:free
