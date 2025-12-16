@@ -33,12 +33,12 @@ endpoints:
       baseURL: https://openrouter.ai/api/v1
       models:
         default:
+          - google/gemini-2.0-flash-exp:free
+          - '--NEW--'
           - nvidia/nemotron-3-nano-30b-a3b:free
           - mistralai/devstral-2512:free
           - nex-agi/deepseek-v3.1-nex-n1:free
           - amazon/nova-2-lite-v1:free
-          - google/gemini-2.0-flash-exp:free
-          - '--NEW--'
           - x-ai/grok-4-fast:free
           - nvidia/nemotron-nano-9b-v2:free
           - google/gemini-2.5-flash-image-preview:free
@@ -92,12 +92,12 @@ endpoints:
       baseURL: https://openrouter.ai/api/v1
       models:
         default:
+          - google/gemini-2.0-flash-exp:free
+          - '--NEW--'
           - nvidia/nemotron-3-nano-30b-a3b:free
           - mistralai/devstral-2512:free
           - nex-agi/deepseek-v3.1-nex-n1:free
           - amazon/nova-2-lite-v1:free
-          - google/gemini-2.0-flash-exp:free
-          - '--NEW--'
           - x-ai/grok-4-fast:free
           - nvidia/nemotron-nano-9b-v2:free
           - google/gemini-2.5-flash-image-preview:free
@@ -151,12 +151,12 @@ endpoints:
       baseURL: https://openrouter.ai/api/v1
       models:
         default:
+          - google/gemini-2.0-flash-exp:free
+          - '--NEW--'
           - nvidia/nemotron-3-nano-30b-a3b:free
           - mistralai/devstral-2512:free
           - nex-agi/deepseek-v3.1-nex-n1:free
           - amazon/nova-2-lite-v1:free
-          - google/gemini-2.0-flash-exp:free
-          - '--NEW--'
           - x-ai/grok-4-fast:free
           - nvidia/nemotron-nano-9b-v2:free
           - google/gemini-2.5-flash-image-preview:free
