@@ -18,6 +18,10 @@ registration:
 # Define the OpenRouter model list once
 openrouter_models: &openrouter_model_list
   default:
+    - nvidia/nemotron-3-nano-30b-a3b:free
+    - mistralai/devstral-2512:free
+    - nex-agi/deepseek-v3.1-nex-n1:free
+    - amazon/nova-2-lite-v1:free
     - google/gemini-2.0-flash-exp:free
     - '--NEW--'
     - meta-llama/llama-4-maverick:free
